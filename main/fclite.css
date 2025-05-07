@@ -89,10 +89,24 @@
     text-overflow: ellipsis;
 }
 
-.random-link-button {
+.random-button-container {
     position: absolute;
     bottom: 20px;
     right: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.random-button-container a {
+    margin-right: 10px;
+    color: #aaaaaa !important;
+    text-decoration: none !important;
+}
+
+.random-link-button {
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
@@ -335,8 +349,8 @@
 #friend-circle-lite-root .card-bg {
     cursor: default;
     z-index: 0;
-    border-radius: 50%;
-    margin: 0;
+    border-radius: 50% !important;
+    margin: 0 !important;
     position: absolute;
     bottom: -20px;
     right: -16px;

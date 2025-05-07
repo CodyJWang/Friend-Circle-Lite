@@ -11,23 +11,34 @@
 
 ## 开发进度
 
+### 2024-10-29
+
+* 完善github数据获取，从环境变量中直接获取，配置文件仅用于自部署
+* 限制文章数量，防止因为数量过大导致的api文件加载缓慢，仅保留150左右文章([#23](https://github.com/willow-god/Friend-Circle-Lite/pull/23))
+* 修改action中写错的github_token拼写
+
+### 2024-10-07
+
+* 添加随机文章刷新按钮
+* 完善邮件通知模板自定义程度
+
 ### 2024-09-28
 
 * 更新自部署的api地址，统一为all.json，提高js兼容性
 * 美化展示页面UI(@JLinMr)，添加背景图片
 * 优化作者卡片弹窗动效(@JLinMr)
 
-### 2024-09-22
+<details>
+<summary>查看更多</summary>
+
+<h3>2024-09-22</h3>
 
 * 修复 #18 提出的，由于rss倒序导致限制抓取错误的问题，改为先全部获取后，按照时间排序，再选择性获取
 
-### 2024-09-05
+<h3>2024-09-05</h3>
 
 * 更新部署方式，将静态文件放到page分支下，主分支不放数据文件
 * 前后端分离，部署方式不变但更加直观方便
-
-<details>
-<summary>查看更多</summary>
 
 <h3>2024-09-03</h3>
 
@@ -421,3 +432,6 @@ python3 run.py
 
 如果遇到任何问题或有建议，请[提交一个 issue](https://github.com/willow-god/Friend-Circle-Lite/issues)。欢迎贡献代码！
 
+## Star增长曲线
+
+[![Star History Chart](https://api.star-history.com/svg?repos=willow-god/Friend-Circle-Lite&type=Timeline)](https://star-history.com/#willow-god/Friend-Circle-Lite&Timeline)
